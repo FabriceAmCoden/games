@@ -119,3 +119,4 @@ public class AnimationTest extends BasicGame {
 		}
 	}
 }
+
