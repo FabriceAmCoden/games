@@ -1,9 +1,7 @@
 package at.Faepse.test;
 
-import org.newdawn.slick.BasicGame;
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
+import org.newdawn.slick.*;
+import org.newdawn.slick.tests.AnimationTest;
 
 public class Rectangles extends BasicGame {
 
@@ -27,3 +25,13 @@ public class Rectangles extends BasicGame {
 
     }
 }
+
+    public static void main(String[] argv) {
+        try {
+            AppGameContainer container = new AppGameContainer(new AnimationTest());
+            container.setDisplayMode(800,600,false);
+            container.start();
+        } catch (SlickException e) {
+            e.printStackTrace();
+        }
+    }
